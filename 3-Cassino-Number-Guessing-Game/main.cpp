@@ -11,9 +11,22 @@ basic operations and other data structures.*/
 #include "game.h"
 
 int main(){
-	Game game;
-	
+	char continue_to_play;
+	while(1){
+		continue_to_play = ' ';
+		Game game;
+		while(1){
 
+			std::cout << "Play Again?? \n[1] Yes\n[2]?"; 
+			std::cin >> continue_to_play;
+			if (continue_to_play == '1' | continue_to_play == '2'){
+				break;
+			} else{std::cout << "Invalid input, please try again" << std::endl; continue;}
+		}
+		if (continue_to_play == '1'){
+			continue;
+		} else {break;}
+	}
 	return 0;
 
 }
