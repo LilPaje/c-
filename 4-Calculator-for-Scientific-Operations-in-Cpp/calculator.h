@@ -15,7 +15,11 @@ C++, and OOPS.*/
 #include <cmath>
 
 class Calculator{
+
+	
+
 	public:
+
 		float Sum(float firstNumber, float secondNumber){
 
 			return firstNumber + secondNumber;
@@ -36,8 +40,30 @@ class Calculator{
 			return firstNumber / secondNumber;
 		}	
 
-		float Exponential(float base, float exponent ){
+		float Pow(float base, float exponent ){
 
 			return pow(base, exponent);
 		}
+		float Root(float base, float exponent){
+
+			return pow(base, 1/exponent);
+		}
+
+		/*void SetFirstNumber(){
+
+		}
+
+		void SetSecondtNumber(){
+
+		}
+
+		void SetOperation(){
+
+		}
+
+		~Calculator(){
+
+		};*/
+
+
 };
